@@ -3,141 +3,271 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>SUNA CAFE</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
 
-<header>
-  <div class="logo">SUNA CAFE</div>
-  <nav>
-    <a href="#">HOME</a>
-    <a href="#">ABOUT</a>
-    <a href="#">MENU</a>
-    <a href="#">ACCESS</a>
-  </nav>
+<header id="header">
+
+    <div class="logo">
+        SUNA CAFE
+    </div>
+
+    <nav id="nav">
+
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#menu">MENU</a>
+        <a href="#access">ACCESS</a>
+
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
 </header>
 
-<section class="hero">
-  <div class="overlay">
-    <h1>SUNA CAFE</h1>
-    <h2>受け継がれる喫茶時間</h2>
-    <p>昔ながらの喫茶文化を大切に、<br>心落ち着くひとときをお届けします。</p>
-  </div>
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <img src="images/hero.jpg" alt="SUNA CAFE">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-text">
+
+        <h1>SUNA CAFE</h1>
+
+        <p>受け継がれる喫茶時間</p>
+
+        <span>
+            昔ながらの喫茶文化を大切に。<br>
+            心落ち着くひとときをお届けします。
+        </span>
+
+    </div>
+
 </section>
 
-<section class="about">
-  <div class="about-image">
-    <img src="images/shop.webp" alt="外観">
-  </div>
-  <div class="about-text">
+<!-- ABOUT -->
 
-    <h2>外観のご紹介</h2>
+<section class="about" id="about">
 
-    <p>
-      緑に囲まれた、落ち着きのある佇まい。<br>
-      木の温もりを感じる外観が、<br>
-      ほっとひと息つける時間の<br>
-      はじまりです。
-    </p>
+    <div class="about-image reveal">
+        <img src="images/exterior.jpg" alt="">
+    </div>
 
-    <img src="images/deco.svg" class="deco">
+    <div class="about-text reveal">
 
-</div>
+      <p class="mini-title">
+SINCE 1996
+</p>
+
+        <h2>外観のご紹介</h2>
+
+        <p>
+            緑に囲まれた、落ち着きのある佇まい。<br>
+            木の温もりを感じる外観が、<br>
+            ほっとひと息つける時間の始まりです。
+        </p>
+
+    </div>
+
 </section>
+
+<!-- OWNER -->
 
 <section class="owner">
-  <div class="owner-text">
-    <h2>店主のメッセージ</h2>
-    <h3 class="owner-catch">
-  一杯のコーヒーと、<br>
-  一枚のホットケーキ。
-</h3>
 
-    <p>
-      慌ただしい毎日の中で、<br>
-      ほっと肩の力を抜いていただけるような、<br>
-      あたたかい場所でありたいと願っています。<br>
-      皆さまの「いつもの場所」になれたら幸いです。<br>
-      　　　　　　　　　　　　　　店主　須奈　一郎
-    </p>
-  </div>
-  <div>
-    <img src="images/owner.png" alt="店主">
-  </div>
+    <div class="owner-text reveal">
+
+      <p class="mini-title">
+OWNER'S MESSAGE
+</p>
+        <h2>店主のメッセージ</h2>
+
+        <h3>
+            一杯のコーヒーと、<br>
+            一枚のホットケーキ。
+        </h3>
+
+        <p>
+            慌ただしい毎日の中で、<br>
+            ほっと肩の力を抜いていただけるような<br>
+            あたたかい場所でありたいと思っています。
+        </p>
+
+        <span>須奈　一郎</span>
+
+    </div>
+
+  <div class="owner-image reveal">
+
+    <div class="owner-slider">
+
+        <img src="images/owner.jpg" alt="店主">
+
+        <img src="images/owner-smile.jpg" alt="店主の笑顔">
+
+    </div>
+
+</div>
+
 </section>
 
-<section class="commitment">
+<!-- CONCEPT -->
 
-    <h2>SUNA CAFEの3つのこだわり</h2>
+<section class="concept">
 
-    <div class="cards">
+    <h2 class="section-title reveal">
+        SUNA CAFE の3つのこだわり
+    </h2>
 
-        <div>
-            <i class="fa-solid fa-seedling"></i>
+    <div class="concept-grid">
+
+        <div class="card coffee-card reveal">
+
+            <div class="card-bg"></div>
+
+            <i class="fa-solid fa-mug-hot"></i>
+
             <h3>自家焙煎コーヒー</h3>
+
             <p>
-                厳選した豆を使用し、
-                香りと味わいを大切に
-                一杯ずつ丁寧に淹れています。
+                厳選した豆を使用し、<br>
+                一杯ずつ丁寧に抽出しています。
             </p>
+
         </div>
 
-        <div>
-            <i class="fa-solid fa-cookie-bite"></i>
-            <h3>鉄板ホットケーキ</h3>
+        <div class="card pancake-card reveal">
+
+    <div class="card-bg"></div>
+
+            <i class="fa-solid fa-cookie"></i>
+
+            <h3>ホットケーキ</h3>
+
             <p>
-                昔ながらの鉄板でじっくり焼き上げ、
-                外は香ばしく、中はふんわりと
-                仕上げています。
+                昔ながらの銅板で焼き上げる、<br>
+                懐かしい味わい。
             </p>
+
         </div>
 
-        <div>
+        <div class="card green-card reveal">
+
+    <div class="card-bg"></div>
+
             <i class="fa-solid fa-leaf"></i>
+
             <h3>緑に囲まれた空間</h3>
+
             <p>
-                木の温もりと観葉植物に囲まれた、
-                心地よい空間でゆったりとした
-                時間をお過ごしいただけます。
+                木の香りと植物に包まれる<br>
+                心地よい時間。
             </p>
+
         </div>
 
     </div>
 
 </section>
 
-<section class="menu-block">
-  <img src="images/coffee.webp" alt="コーヒー">
-  <div class="menu-text">
-    <h2>こだわりのコーヒー</h2>
-    <p>一杯ずつ丁寧に淹れるコーヒーは<br>
-        香り高く、深い味わい。<br>
-    静かな時間に寄り添う、<br>
-SUNA CAFE自慢の一杯です。</p>
-  </div>
+<!-- COFFEE -->
+
+<section class="menu-section" id="menu">
+
+    <div class="menu-image reveal">
+
+        <img src="images/coffee.jpg" alt="">
+
+    </div>
+
+    <div class="menu-text reveal">
+
+        <h2>こだわりのコーヒー</h2>
+
+        <p>
+            一杯ずつ丁寧に淹れるコーヒーは、
+            香り高く深い味わい。
+        </p>
+
+        <div class="menu-preview">
+
+    Hand Drip Coffee<br>
+    Cafe Latte<br>
+    Coffee Float
+
+</div>
+
+    </div>
+
 </section>
 
-<section class="menu-block reverse">
-  <div class="menu-text">
-    <h2>懐かしのホットケーキ</h2>
-    <p>ふんわりと焼き上げた生地に、<br>
-    バターとメープルシロップがとろける<br>
-どこか懐かしい味わいのホットケーキ<br>
-多くのお客様に愛され続けています。</p>
-  </div>
-  <img src="images/hotcake.webp" alt="ホットケーキ">
+<!-- PANCAKE -->
+
+<section class="menu-section reverse">
+
+    <div class="menu-image reveal">
+
+        <img src="images/pancake.jpg" alt="">
+
+    </div>
+
+    <div class="menu-text reveal">
+
+        <div class="recommend-tag">
+    人気 No.1
+</div>
+
+<h2>懐かしのホットケーキ</h2>
+
+<p>
+ふんわり焼き上げた生地に、
+バターとメープルシロップがとろける
+昔ながらの人気メニュー。
+</p>
+
+<div class="menu-preview">
+
+    Classic Pancake<br>
+    Butter & Maple<br>
+    Coffee Set
+
+</div>
+
+    </div>
+
 </section>
 
-<section class="access">
+<!-- ACCESS -->
 
-    <div class="access-text">
+<section class="access" id="access">
+
+    <div class="access-text reveal">
 
         <h2>ACCESS</h2>
 
         <div class="access-item">
+
             <i class="fa-solid fa-location-dot"></i>
 
             <div>
@@ -145,35 +275,60 @@ SUNA CAFE自慢の一杯です。</p>
                 大阪府大阪市○○区○○町1-2-3<br>
                 ○○駅より徒歩5分
             </div>
+
         </div>
 
         <div class="access-item">
+
             <i class="fa-regular fa-clock"></i>
 
             <div>
-                営業時間<br>
-                9:00〜18:00（L.O.17:30）<br>
+                9:00〜18:00<br>
                 定休日：水曜日
             </div>
+
         </div>
 
         <div class="access-item">
+
             <i class="fa-solid fa-phone"></i>
 
             <div>
                 06-1234-5678
             </div>
+
         </div>
 
     </div>
 
-    <img src="images/map.png" alt="地図">
+    <div class="access-map reveal">
+
+        <img src="images/map.jpg" alt="">
+
+    </div>
 
 </section>
 
+<!-- FOOTER -->
+
 <footer>
-  <h2>SUNA CAFE</h2>
+
+    <h2>SUNA CAFE</h2>
+
+    <p>Since 1996</p>
+
+    <div class="footer-menu">
+
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">MENU</a>
+        <a href="#">ACCESS</a>
+
+    </div>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
