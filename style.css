@@ -545,18 +545,6 @@ font-size:36px;
 position:relative;
 }
 
-.about-text::after{
-content:"";
-position:absolute;
-width:120px;
-height:120px;
-border:2px solid #c9b29c;
-border-radius:50%;
-top:40px;
-right:60px;
-opacity:.4;
-}
-
 .owner-image{
 overflow:hidden;
 }
